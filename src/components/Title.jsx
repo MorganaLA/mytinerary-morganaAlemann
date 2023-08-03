@@ -1,6 +1,6 @@
 function Title() {
   return (
-    <h1 className="text-xl">My Tinerary</h1>
+    <h1 className="text-xl sm:text-base">My Tinerary</h1>
   )
 }
 
