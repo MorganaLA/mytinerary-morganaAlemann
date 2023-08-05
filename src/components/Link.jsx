@@ -1,8 +1,9 @@
-const Link = ({title, to}) => {
+import React from 'react';
 
-    return (
-        <a className='header-link p-2 mr-2' href={to}>{title}</a>
-    )
-}
+const Link = ({ title, to, className, onClick }) => (
+    <a className={className} href={to} onClick={onClick}>
+        {title}
+    </a>
+);
 
-export default Link
+export default Link;

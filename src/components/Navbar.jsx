@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from './Title';
 import Button from './Button';
+import MenuH from './MenuH';
 import Menu from './Menu';
 
 function Navbar() {
@@ -20,7 +21,8 @@ function Navbar() {
           title='Login'
           className="flex flex-row items-center mx-2"
           to='/Login'
-        />       
+        />
+        <MenuH />       
       </nav>
     </header>
   );
