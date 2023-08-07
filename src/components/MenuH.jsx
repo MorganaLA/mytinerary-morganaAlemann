@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Link from './Link';
 import Button from './Button';
+import { Link } from 'react-router-dom'
 
 const MenuH = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,24 +30,23 @@ const MenuH = () => {
     );
 
     return (
-        <div className="sm:hidden relative ml-3 my-2 flex justify-center">
+        <div className="md:hidden relative ml-3 my-2 flex justify-center">
             <Button
                 img={<ImgMenu />}
                 onClick={toggleMenu}
-                className="sm:hidden"
+                className="md:hidden"
             />
 
             {isOpen && (
-                <div className=" absolute z-10 right-0 mt-2 w-32 bg-white/70 rounded ring-8 ring-white/70 shadow-fxs transform translate-y-11 translate-x-1.5 transition-transform origin-top">
+                <div className="absolute z-10 right-0 mt-2 w-32 bg-white/70 rounded ring-8 ring-white/70 shadow-fxs transform translate-y-11 translate-x-1.5 transition-transform origin-top">
                     <ul>
                         {links.map((link) => (
                             <li key={link.title}>
                                 <Link
                                     to={link.to}
-                                    title={link.title}
                                     className="block px-4 py-2 text-gray-800 hover:bg-indigo-600/20"
                                     onClick={toggleMenu}
-                                />
+                                >{link.title}</Link>
                             </li>
                         ))}
                     </ul>

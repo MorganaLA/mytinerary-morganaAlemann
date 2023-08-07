@@ -14,6 +14,7 @@ export default {
       screens: {
         'sm': '400px',
         'md': '700px',
+        'mt': '800',
         'lg': '1024px',
         'xl': '1280px',
         '2xl': '1536px',
@@ -30,6 +31,7 @@ export default {
     },
     boxShadow: {
       'fxs': '0px 7px 5px 5px rgba(79,70,229,0.55)',
+      'fxc': '0px 3px 10px 2px rgba(79,70,229,0.60)'
     }
     },
   },

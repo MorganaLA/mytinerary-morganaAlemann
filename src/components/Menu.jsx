@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from './Link';
+import { Link } from 'react-router-dom'
 
 function Menu() {
     const links = [
@@ -7,7 +7,7 @@ function Menu() {
         { title: 'Cities', to: '/cities' },
     ];
   return (
-        links.map((link) => (<Link className="hidden sm:flex flex-row mr-4 sm:text-base" key={link.title} title={link.title} to={link.to}/>))
+        links.map((link) => (<Link className="hidden md:flex flex-row mr-4 md:text-base" key={link.title} to={link.to}>{link.title}</Link>))
      )
 }
 
