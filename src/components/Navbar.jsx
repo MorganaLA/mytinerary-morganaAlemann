@@ -14,13 +14,13 @@ function Navbar() {
   return (
     <header className='navbar pt-1 pb-1 w-full font-custom flex justify-between items-center text-base font-semibold'>
       <Title />
-      <nav className="flex justify-around items-center">
+      <nav className="flex justify-between items-center">
         <Menu />
          <Button
           img={<ImgLogin/>}
           title='Login'
-          className="flex flex-row items-center mx-2"
-          to='/Login'
+          className="flex flex-row items-center ml-3 button h-10 group relative inline-block focus:outline-none focus:ring"
+          to='/login'
         />
         <MenuH />       
       </nav>

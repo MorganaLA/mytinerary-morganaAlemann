@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from '../pages/Home'
+import Home  from '../pages/Home'
 import Main from '../layouts/Main'
 import { Cities } from "../pages/Cities";
+import Error404 from "../pages/Error404";
 
 
 const router = createBrowserRouter([
@@ -10,7 +11,7 @@ const router = createBrowserRouter([
         element: <Main />,
         children: [
             {
-                path: '/',
+                path: '/home',
                 element: <Home />
             },
             {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '*',
-                element: <h1 className="text-3xl">Pagina de ERROR</h1>
+                element: <Error404/>
             },
         ]
     }

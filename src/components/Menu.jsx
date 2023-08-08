@@ -7,7 +7,7 @@ function Menu() {
         { title: 'Cities', to: '/cities' },
     ];
   return (
-        links.map((link) => (<Link className="hidden md:flex flex-row mr-4 md:text-base" key={link.title} to={link.to}>{link.title}</Link>))
+        links.map((link) => (<Link className="hidden mx-2 md:flex flex-row md:text-base hover:-translate-y-0.5 transform transition duration-150 ease-out hover:ease-in hover:scale-110 hover:text-black" key={link.title} to={link.to}>{link.title}</Link>))
      )
 }
 

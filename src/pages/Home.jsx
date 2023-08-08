@@ -29,7 +29,8 @@ function Home() {
               <div className="mt-3">
                 <Button
                   text='View More'
-                  to='/Cities'
+                  to='./cities'
+                  className="button h-10 group relative inline-block focus:outline-none focus:ring"
                 />
               </div>
             </div>
