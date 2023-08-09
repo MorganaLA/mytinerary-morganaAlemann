@@ -19,13 +19,8 @@ function Home() {
               />
             </div>
 
-            <div className="lg:py-20 lg:px-14 mt-[-1.5rem] sm:mt-[-5.5rem] md:mt-[-2.6rem] lg:mt-6">
-              <h2 className="text-2xl font-bold sm:text-3xl">Find the perfect destination</h2>
-
-              <p className="mt-1 sm:mt-4 sm:text-xl text-gray-600">
-                Our app will help you find the perfect path for your next trip. With an easy-to-use interface and a host of itinerary options, planning your next trip has never been easier.
-              </p>
-
+            <div className="lg:py-24 lg:px-14 mt-[-1.5rem] sm:mt-[-5.5rem] md:mt-[-2.6rem] lg:mt-6">
+              <p className="my-4 sm:mt-4 sm:mb-8 sm:text-xl lg:text-[1.5rem] text-base text-gray-700 italic">"Find your perfect trip, designed by insiders who know and love their cities!"</p>
               <div className="mt-3">
                 <Button
                   text='View More'

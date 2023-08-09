@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 function Carousel() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -53,6 +53,8 @@ function Carousel() {
             url: 'https://images.pexels.com/photos/2339009/pexels-photo-2339009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
         }
     ];
+    const startIndex = currentSlide * 4;
+    const visibleImages = images.slice(startIndex, startIndex + 4);
 
     const prevSlide = () => {
         setCurrentSlide((prevSlideIndex) =>
@@ -66,8 +68,18 @@ function Carousel() {
         );
     };
 
-    const startIndex = currentSlide * 4;
-    const visibleImages = images.slice(startIndex, startIndex + 4);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSlide((prevSlideIndex) =>
+            prevSlideIndex === Math.ceil(images.length / 4) - 1 ? 0 : prevSlideIndex + 1
+            );
+        }, 2000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [currentSlide]);
+
 
     return (
         <div className="carousel flex flex-row justify-around items-center h-[22rem] bg-indigo-600/10 my-4 lg:justify-evenly">
