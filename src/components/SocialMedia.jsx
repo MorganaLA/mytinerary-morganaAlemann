@@ -5,7 +5,7 @@ function SocialMedia() {
     <ul className="flex justify-center items-center gap-6 md:gap-8">
     <li>
       <a
-        href="/"
+        href="https://www.facebook.com/"
         rel="noreferrer"
         target="_blank"
         className="text-gray-700 transition duration-0 ease-in-out hover:text-[#0061a9]"
@@ -28,7 +28,7 @@ function SocialMedia() {
 
     <li>
       <a
-        href="/"
+        href="https://www.instagram.com/"
         rel="noreferrer"
         target="_blank"
         className="text-gray-700 transition duration-0 ease-in-out hover:text-[#DD2A7B]"
@@ -51,7 +51,7 @@ function SocialMedia() {
 
     <li>
       <a
-        href="/"
+        href="https://twitter.com/"
         rel="noreferrer"
         target="_blank"
         className="text-gray-700 transition duration-0 ease-in-out hover:text-[#08a0e9]"
