@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Menu() {
     const links = [
-        { title: 'Home', to: '/home' },
+        { title: 'Home', to: '/' },
         { title: 'Cities', to: '/cities' },
     ];
   return (

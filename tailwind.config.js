@@ -37,12 +37,6 @@ export default {
         'fxc': '0px 3px 10px 2px rgba(79,70,229,0.60)',
       },
       colors: {
-        insta: {
-          '0': 'rgba(254,207,89,1)',
-          '40': 'rgba(255,84,40,1)',
-          '80': 'rgba(189,43,188,1)',
-          '100': 'rgba(1,67,224,1)',
-        },
       },
       keyframes: {
         beat: {

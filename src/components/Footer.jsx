@@ -30,7 +30,7 @@ function Footer() {
           <img className="w-10 h-10 pb-1 pl-1" src="./../LogoF.png" alt="Logo" />
           <p className="footer-text 4xl pb-1 pl-1 font-semibold">My Tinerary</p>
         </div>
-        <div className="flex text-center justify-center font-medium mr-[-0.6rem]">
+        <div className="flex text-center justify-center font-medium mr-[-0.5rem]">
           <Menu />
         </div>
         <SocialMedia />

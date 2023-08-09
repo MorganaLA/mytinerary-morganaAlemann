@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const MenuH = () => {
     const [isOpen, setIsOpen] = useState(false);
     const links = [
-        { title: 'Home', to: '/home' },
+        { title: 'Home', to: '/' },
         { title: 'Cities', to: '/cities' },
     ];
 
