@@ -19,7 +19,7 @@ function Navbar() {
          <Button
           img={<ImgLogin/>}
           title='Login'
-          className="flex flex-row items-center ml-3 button h-10 group relative inline-block focus:outline-none focus:ring"
+          className="flex flex-row items-center ml-3 button h-10 group relative focus:outline-none focus:ring"
           to='/login'
         />
         <MenuH />       

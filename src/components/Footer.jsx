@@ -3,7 +3,7 @@ import Menu from './Menu'
 import SocialMedia from './SocialMedia'
 function Footer() {
   return (
-    <footer className="bg-gray-500/40 absolute w-full start-0 inset-x-0 bottom-auto">
+    <footer className="bg-gray-500/40 absolute w-full inset-x-0 bottom-auto mt-auto smd:bottom-auto md:bottom-auto mt:bottom-auto lg:bottom-auto xl:bottom-auto">
       <div className="mx-auto w-full px-4 py-10 sm:px-6 lg:px-8 flex flex-row justify-between flex-wrap items-center">
         <div className="absolute end-4 bottom-24 lg:bottom-[5rem] xl:bottom-[6rem]">
           <a

@@ -13,14 +13,17 @@ export default {
       },
       screens: {
         'sm': '400px',
+        'smd':'600px',
         'md': '700px',
-        'mt': '800',
+        'mdt': '750px',
+        'mt': '800px',
         'lg': '1024px',
         'xl': '1280px',
         '2xl': '1536px',
       },
       fontSize: {
         ss: '0.5rem',
+        ssm: '0.6rem',
         sm: '0.8rem',
         base: '1rem',
         xl: '1.25rem',

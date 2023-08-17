@@ -4,11 +4,13 @@ import Navbar from "../components/Navbar"
 
 function Main() {
   return (
-    <>
+    <div className="max-h-screen">
     <Navbar/>
+    <main className="min-h-screen">
     <Outlet />
+    </main>
     <Footer />
-    </>
+    </div>
   )
 }
 

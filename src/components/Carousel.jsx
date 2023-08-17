@@ -71,9 +71,9 @@ function Carousel() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((prevSlideIndex) =>
-            prevSlideIndex === Math.ceil(images.length / 4) - 1 ? 0 : prevSlideIndex + 1
+                prevSlideIndex === Math.ceil(images.length / 4) - 1 ? 0 : prevSlideIndex + 1
             );
-        }, 2000);
+        }, 3000);
 
         return () => {
             clearInterval(interval);
@@ -82,29 +82,33 @@ function Carousel() {
 
 
     return (
-        <div className="carousel flex flex-row justify-around items-center h-[22rem] bg-indigo-600/10 my-4 lg:justify-evenly">
-            <button className="prev-btn" onClick={prevSlide}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-[4px] lg:mr-[-3rem]">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                </svg>
-            </button>
-            <div className="slides grid grid-cols-2 grid-rows-2 gap-4 items-center h-64 w-96 lg:h-72 lg:w-[34rem]">
-                {visibleImages.map((image, index) => (
-                    <div key={index} className="slide group h-full w-full shadow-fxc border-2 border-black/80 transform transition duration-200 ease-out hover:ease-in hover:scale-[1.4] hover:z-[100] hover:object-contain">
-                        <p className="absolute inset-x-0 top-0 text-transparent duration-200 group-hover:text-gray-100 group-hover:bg-gray-500/60 ">{image.title}</p>
-                        <img
-                            className="box-content object-cover object-center h-full w-full"
-                            src={image.url}
-                            alt={image.title}
-                        />
-                    </div>
-                ))}
-            </div>
-            <button className="next-btn" onClick={nextSlide}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-[4px] lg:ml-[-3rem]">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-            </button>
+
+        <div className="flex flex-col bg-indigo-600/10 my-4">
+            <h2 className="mt-4 text-xl font-semibold">Popular Mytineraries</h2> 
+            <div className="carousel flex flex-row justify-around items-center h-[22rem] lg:justify-evenly">
+                <button className="prev-btn" onClick={prevSlide}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-[4px] lg:mr-[-3rem]">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+                <div className="slides grid grid-cols-2 grid-rows-2 gap-4 items-center h-64 w-96 lg:h-72 lg:w-[34rem]">
+                    {visibleImages.map((image, index) => (
+                        <div key={index} className="slide group h-full w-full shadow-fxc border-2 border-black/80 transform transition duration-200 ease-out hover:ease-in hover:scale-[1.4] hover:z-[100] hover:object-contain">
+                            <p className="absolute inset-x-0 top-0 text-transparent duration-200 group-hover:text-gray-100 group-hover:bg-gray-500/60 ">{image.title}</p>
+                            <img
+                                className="box-content object-cover object-center h-full w-full"
+                                src={image.url}
+                                alt={image.title}
+                            />
+                        </div>
+                    ))}
+                </div>
+                <button className="next-btn" onClick={nextSlide}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-[4px] lg:ml-[-3rem]">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+                </div>
         </div>
     );
 }
