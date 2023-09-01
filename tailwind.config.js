@@ -35,7 +35,8 @@ export default {
       boxShadow: {
         'fxs': '0px 7px 5px 5px rgba(79,70,229,0.55)',
         'fxc': '0px 3px 10px 2px rgba(79,70,229,0.60)',
-        'cbx': '-8px -8px 0px 0px rgba(17,24,39,0.4)'
+        'cbx': '-8px -8px 0px 0px rgba(17,24,39,0.4)',
+        'bbx': '0px 0px 10px 0px rgba(30,27,75,0.3) inset'
       },
       dropShadow:{
         'fxc': '0px 3px 10px 2px rgba(79,70,229,0.60)',
