@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import '../styles/SignUp.css'
 import Button from './Button';
+
 
 function SignUp() {
     const [formData, setFormData] = useState({
@@ -25,7 +27,7 @@ function SignUp() {
       };
     
       return (
-        <div>
+        <div className='w-fit'>
          <h2 as="h2" className="text-lg font-medium text-center leading-6 text-indigo-50">
             Sign Up
          </h2>
@@ -102,7 +104,7 @@ function SignUp() {
               </select>
             </div>
             <div>
-              <button type="submit">Sign Up</button>
+              <Button type="submit" text='Sign Up' className='flex flex-row items-center ml-3 button h-10 group relative focus:outline-none focus:ring' />
             </div>
           </form>
         </div>

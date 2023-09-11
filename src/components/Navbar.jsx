@@ -3,6 +3,8 @@ import Title from './Title';
 import Button from './Button';
 import MenuH from './MenuH';
 import Menu from './Menu';
+import { Link } from 'react-router-dom';
+import Log from '../pages/Log';
 
 function Navbar() {
 
@@ -16,12 +18,12 @@ function Navbar() {
       <Title />
       <nav className="flex justify-between items-center">
         <Menu />
+        <Link to="/log">
          <Button
           img={<ImgLogin/>}
           title='Log'
-          to='/log'
           className="flex flex-row items-center ml-3 button h-10 group relative focus:outline-none focus:ring"
-           />
+           /></Link>
         <MenuH />       
       </nav>
     </header>

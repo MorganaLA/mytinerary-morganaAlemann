@@ -1,20 +1,17 @@
 import React from 'react';
-import citiesData from '../cities.json';
+import SignUp from '../components/SignUp';
 
 function Log() {
   return (
     <main>
-      {citiesData.map((city, index) => (
-        <div
-          key={index}
-          className=""
-          style={{ backgroundImage: `url(${city.image})` }}
-        >
-         
-        </div>
-      ))}
+     <SignUp  className="flex items-center justify-center" />
     </main>
   );
 }
 
+
 export default Log;
+
+
+
+
