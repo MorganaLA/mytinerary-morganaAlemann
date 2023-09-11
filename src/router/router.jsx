@@ -4,6 +4,7 @@ import Main from '../layouts/Main'
 import Cities from "../pages/Cities";
 import Error404 from "../pages/Error404";
 import Details from "../pages/Details";
+import Log from "../pages/Log";
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path: '/cities/:id',
                 element: <Details />
+            },  
+            {
+                path: '/log',
+                element: <Log />
             },            
             {
                 path: '*',

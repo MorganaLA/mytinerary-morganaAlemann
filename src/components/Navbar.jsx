@@ -18,10 +18,10 @@ function Navbar() {
         <Menu />
          <Button
           img={<ImgLogin/>}
-          title='Login'
+          title='Log'
+          to='/log'
           className="flex flex-row items-center ml-3 button h-10 group relative focus:outline-none focus:ring"
-          to='/login'
-        />
+           />
         <MenuH />       
       </nav>
     </header>

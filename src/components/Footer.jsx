@@ -1,4 +1,3 @@
-import '../styles/Footer.css'
 import Menu from './Menu'
 import SocialMedia from './SocialMedia'
 function Footer() {
