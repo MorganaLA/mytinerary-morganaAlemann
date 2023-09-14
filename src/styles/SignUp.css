@@ -1,12 +1,21 @@
 label, input{
-    justify-content: center;
     margin-top: .5rem;
     margin-bottom: .5rem;
 }
 label{
-    margin-right:.3rem;
+    margin-right: 1rem;
 }
-input{
+input, select{
     border: 1px solid currentColor;
     background-color: rgb(202, 199, 247, 0.5);
 }
+
+@media screen and (max-width: 600px) {
+    label, input{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    },
+    label{
+        margin-right: .1rem;
+    }
+  }

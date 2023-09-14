@@ -1,6 +1,6 @@
 import { Disclosure } from '@headlessui/react'
 
-function Itinerary({ title, name, photo, duration, likes, price, hashtags, comments }) {
+function Itinerary({ title, first_name, photo, duration, likes, price, hashtags, comments }) {
 
     const svgMarkup = (
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 stroke-teal-700">
@@ -30,8 +30,8 @@ function Itinerary({ title, name, photo, duration, likes, price, hashtags, comme
                         <p>Duration: <span>{duration}</span> Hours</p>
                     </div>
                     <div className='flex flex-col place-items-center my-4 w-1/4'>
-                        <img className='rounded-full w-40 h-40 mx-auto object-cover object-center' src={photo} alt={name} />
-                        <h4 className='text-xl text-center mt-4 font-medium'>{name}</h4>
+                        <img className='rounded-full w-40 h-40 mx-auto object-cover object-center' src={photo} alt={first_name} />
+                        <h4 className='text-xl text-center mt-4 font-medium'>{first_name}</h4>
                     </div>
                     <div className='flex flex-col place-items-center my-4 w-1/4'>
                         <span className='flex flex-row gap-1 align-middle font-semibold'>{likes} <img className="w-6 h-6 animate-beat" src="./../LogoF.png" alt="Logo" /></span>

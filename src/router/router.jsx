@@ -4,7 +4,8 @@ import Main from '../layouts/Main'
 import Cities from "../pages/Cities";
 import Error404 from "../pages/Error404";
 import Details from "../pages/Details";
-import Log from "../pages/Log";
+import Log from '../pages/Log';
+import ProtectedRoute from "./ProtectedRoute";
 
 
 const router = createBrowserRouter([
@@ -26,7 +27,9 @@ const router = createBrowserRouter([
             },  
             {
                 path: '/log',
-                element: <Log />
+                element: (<ProtectedRoute path='/'>
+                <Log />
+                </ProtectedRoute>)
             },            
             {
                 path: '*',

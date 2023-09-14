@@ -13,15 +13,16 @@ function ItinerariesList({ cityId }) {
     }, [dispatch]);
 
     const filteredItineraries = itineraries.filter(itinerary => itinerary.city === cityId);
+    console.log(filteredItineraries)
 
     return (
         <div>
             {filteredItineraries.length > 0 ? (
-                filteredItineraries.map(itinerary => (
+                filteredItineraries?.map(itinerary => (
                     <Itinerary
                         key={itinerary._id}
                         title={itinerary.title}
-                        name={itinerary.user.name}
+                        first_name={itinerary.user.first_name}
                         photo={itinerary.user.photo}
                         duration={itinerary.duration}
                         likes={itinerary.likes}

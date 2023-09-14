@@ -12,7 +12,9 @@ export default {
         custom: ['Nunito', 'sans-serif'],
       },
       screens: {
+        'ss':'390px',
         'sm': '400px',
+        'smm': '506px',
         'smd':'600px',
         'md': '700px',
         'mdt': '750px',
