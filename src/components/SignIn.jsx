@@ -4,8 +4,13 @@ import { GoogleSignIn } from './GoogleSignIn';
 import { useDispatch, useSelector } from 'react-redux';
 import { user_login } from '../store/actions/userActions';
 import Swal from 'sweetalert2'
+import { useNavigate } from 'react-router-dom';
+
 
 function SignIn() {
+
+  const navigate = useNavigate()
+
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -25,13 +30,14 @@ function SignIn() {
   
   const handleLogin = async (u) => {
     u.preventDefault();
-
+    console.log('Holis')
     try {
 
       await dispatch(user_login({ data: formData }));
       
       setIsLoggedIn(true);
-      window.location.href = "/";
+
+      navigate('/')
 
     } catch (error) {
       console.log(error);
@@ -48,7 +54,7 @@ function SignIn() {
   const handleGooglesign = (boolean) => {
   
     setIsLoggedIn(boolean);
-    window.location.href = "/";
+
   };
 
   return (
@@ -88,8 +94,8 @@ function SignIn() {
               <Button
                 text='Sign In'
                 className='flex flex-row items-center ml-3 button w-fit h-10 group relative focus:outline-none focus:ring'
-                onClick={handleLogin}
                 disabled={loading} 
+                onClick={handleLogin}
               />
             </div>
             <GoogleSignIn handleGooglesign={handleGooglesign}/>

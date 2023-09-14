@@ -14,6 +14,7 @@ export const user_login = createAsyncThunk("user_login", async (obj, { dispatch 
     
     Swal.fire({
       title: 'Success!',
+      icon: 'success',
       text: 'Login successful'
     })
 
@@ -26,6 +27,7 @@ export const user_login = createAsyncThunk("user_login", async (obj, { dispatch 
 
     Swal.fire({
       title: 'Error!',
+      icon: 'error',
       text: error.response ? error.response.data.message : 'An error occurred'
     })
     return {
@@ -42,6 +44,7 @@ export const user_signup = createAsyncThunk("user_signup", async (userData, { di
 
     Swal.fire({
       title: 'Success!',
+      icon: 'success',
       text: 'Signup successful'
     })
 
@@ -52,6 +55,7 @@ export const user_signup = createAsyncThunk("user_signup", async (userData, { di
 
     Swal.fire({
       title: 'Error!',
+      icon: 'error',
       text: error.response ? error.response.data.message : 'An error occurred'
     })
     return {

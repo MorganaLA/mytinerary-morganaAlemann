@@ -1,10 +1,12 @@
 import axios from "axios";
 import { useRef } from "react";
 import { useEffect } from "react"
+import { useNavigate } from 'react-router-dom';
 
 
 export const GoogleSignIn = ({handleGooglesign}) => {
 
+    const navigate = useNavigate()
 
     const googleButton = useRef();
 
@@ -18,7 +20,7 @@ export const GoogleSignIn = ({handleGooglesign}) => {
         localStorage.setItem("token", userResponse.data.response.token);
         localStorage.setItem("user", JSON.stringify(userResponse.data.response.user));
         handleGooglesign(true)
-        //window.location.href = "/";
+        navigate('/')
     }
 
     useEffect(() => {
