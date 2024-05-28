@@ -39,7 +39,7 @@ export const user_login = createAsyncThunk("user_login", async (obj, { dispatch 
 
 export const user_signup = createAsyncThunk("user_signup", async (userData, { dispatch }) => {
   try {
-    const { data } = await axios.post("http://localhost:8000/api/auth/signup", userData);
+    const { data } = await axios.post("https://mytinerary-back-morganaalemann.onrender.com/api/auth/signup", userData);
     console.log(data);
 
     Swal.fire({
