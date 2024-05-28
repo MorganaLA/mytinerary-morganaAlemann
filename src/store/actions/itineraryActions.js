@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const get_itineraries = createAsyncThunk('get_itineraries', async () => {
     try {
-        const response = await axios.get('http://localhost:8000/api/itineraries')
+        const response = await axios.get('https://mytinerary-back-morganaalemann.onrender.com/api/itineraries')
 
         return {
             itineraries: response.data.itineraries
