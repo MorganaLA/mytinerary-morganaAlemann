@@ -1,0 +1,94 @@
+{
+	"citiesData": [
+		{
+			"name": "Paris",
+			"country": "France",
+			"image": "https://images.pexels.com/photos/5005305/pexels-photo-5005305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"description": "Paris, the capital of France, is known for its iconic Eiffel Tower, world-class art museums like the Louvre, and charming neighborhoods like Montmartre."
+		},
+		{
+			"name": "Kyoto",
+			"country": "Japan",
+			"image": "https://images.pexels.com/photos/16827772/pexels-photo-16827772/free-photo-of-castillo-de-osaka.jpeg?auto=compress&cs=tinysrgb&w=600",
+			"description": "Kyoto, in Japan, is famous for its historic temples, traditional tea houses, and stunning cherry blossoms that attract visitors from all over the world."
+		},
+		{
+			"name": "New York",
+			"country": "United States",
+			"image": "https://images.pexels.com/photos/40142/new-york-skyline-manhattan-hudson-40142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"description": "New York City, located in the United States, is a bustling metropolis known for its iconic skyline, Times Square, Central Park, and cultural diversity."
+		},
+		{
+			"name": "Río De Janeiro",
+			"country": "Brazil",
+			"image": "https://images.pexels.com/photos/6580702/pexels-photo-6580702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"description": "Río de Janeiro, situated in Brazil, is famous for its breathtaking Copacabana Beach, Christ the Redeemer statue, and vibrant Carnival celebrations."
+		},
+		{
+			"name": "Venice",
+			"country": "Italy",
+			"image": "https://images.pexels.com/photos/1796736/pexels-photo-1796736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"description": "Venice, in Italy, is renowned for its romantic canals, historic architecture, and annual Venetian Carnival, making it a unique and charming destination."
+		},
+		{
+			"name": "Cape Town",
+			"country": "South Africa",
+			"image": "https://images.pexels.com/photos/259447/pexels-photo-259447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"description": "Cape Town, located in South Africa, offers stunning landscapes, including the iconic Table Mountain, beautiful beaches, and a rich cultural heritage."
+		},
+		{
+			"name": "Sídney",
+			"country": "Australia",
+			"image": "https://images.pexels.com/photos/5707602/pexels-photo-5707602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"description": "Sydney, in Australia, is famous for the Sydney Opera House, the Sydney Harbour Bridge, and its gorgeous harbor, making it a must-visit destination."
+		},
+		{
+			"name": "Seoul",
+			"country": "South Korea",
+			"image": "https://images.pexels.com/photos/237211/pexels-photo-237211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"description": "Seoul, the capital of South Korea, offers a mix of traditional and modern attractions, including historic palaces, bustling markets, and high-tech districts."
+		},
+		{
+			"name": "Instanbul",
+			"country": "Turkey",
+			"image": "https://images.pexels.com/photos/7529416/pexels-photo-7529416.jpeg?auto=compress&cs=tinysrgb&w=600",
+			"description": "Istanbul, located in Turkey, is a city where East meets West, showcasing rich history with stunning landmarks like the Hagia Sophia and the Blue Mosque."
+		},
+		{
+			"name": "Buenos Aires",
+			"country": "Argentina",
+			"image": "https://www.cronista.com/files/image/352/352344/61251b22add52.jpg",
+			"description": "Buenos Aires, the capital of Argentina, is known for its vibrant tango music and dance, historic neighborhoods, and lively arts and culture scene."
+		},
+		{
+			"name": "México City",
+			"country": "Mexico",
+			"image": "https://images.pexels.com/photos/12295573/pexels-photo-12295573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"description": "Mexico City, the capital of Mexico, boasts a mix of ancient Aztec ruins, colonial architecture, and modern urban life in its bustling cityscape."
+		},
+		{
+			"name": "Tokyo",
+			"country": "Japan",
+			"image": "https://images.pexels.com/photos/2339009/pexels-photo-2339009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+			"description": "Tokyo, the capital of Japan, is a futuristic metropolis known for its cutting-edge technology, vibrant street fashion, and diverse culinary scene."
+		},
+		{
+			"name": "Edinburgh",
+			"country": "United Kingdom",
+			"image": "https://images.unsplash.com/photo-1571044880241-95d4c9aa06f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+			"description": "Edinburgh, the capital of Scotland, is famed for its historic and cultural attractions, including the Edinburgh Castle and the annual Edinburgh Festival."
+		},
+		{
+			"name": "London",
+			"country": "United Kingdom",
+			"image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80",
+			"description": "London, the capital of the United Kingdom, offers a blend of historical landmarks like the Big Ben, modern architecture, and world-class museums."
+		},
+		{
+			"name": "Rome",
+			"country": "Italy",
+			"image": "https://images.unsplash.com/photo-1529260830199-42c24126f198?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=876&q=80",
+			"description": "Rome, the capital of Italy, is a city steeped in history with iconic sites like the Colosseum, Vatican City, and charming streets filled with art and culture."
+		}
+	]
+}
