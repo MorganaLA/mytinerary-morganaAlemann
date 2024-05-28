@@ -2,11 +2,16 @@ import axios from "axios";
 import { useRef } from "react";
 import { useEffect } from "react"
 import { useNavigate } from 'react-router-dom';
+import { user_login_google } from "../store/actions/userActions";
+import { useDispatch } from "react-redux";
+
 
 
 export const GoogleSignIn = ({handleGooglesign}) => {
 
     const navigate = useNavigate()
+
+    const dispatch = useDispatch()
 
     const googleButton = useRef();
 
@@ -15,12 +20,13 @@ export const GoogleSignIn = ({handleGooglesign}) => {
         const data = {
             token_id: response.credential
         }
-        const userResponse = await axios.post('http://localhost:8000/api/auth/google', data);
-        console.log(userResponse)
-        localStorage.setItem("token", userResponse.data.response.token);
-        localStorage.setItem("user", JSON.stringify(userResponse.data.response.user));
-        handleGooglesign(true)
-        navigate('/')
+    //     const userResponse = await axios.post('http://localhost:8000/api/auth/google', data);
+    //     console.log(userResponse)
+    //     localStorage.setItem("token", userResponse.data.response.token);
+    //     localStorage.setItem("user", JSON.stringify(userResponse.data.response.user));
+    //     handleGooglesign(true)
+    //     navigate('/')
+       dispatch(user_login_google({ data }));
     }
 
     useEffect(() => {

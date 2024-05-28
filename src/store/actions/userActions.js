@@ -36,6 +36,40 @@ export const user_login = createAsyncThunk("user_login", async (obj, { dispatch 
   }
 });
 
+export const user_login_google = createAsyncThunk("user_login", async (obj, { dispatch }) => {
+  try {
+    dispatch(userLoading());
+
+    const { data } = await axios.post("http://localhost:8000/api/auth/google", obj.data);
+    localStorage.setItem("token", data.response.token);
+    localStorage.setItem("user", JSON.stringify(data.response.user));
+
+    dispatch(userLoginSuccess(data.response.user, data.response.token));
+    
+    Swal.fire({
+      title: 'Success!',
+      icon: 'success',
+      text: 'Login successful'
+    })
+
+    return {
+      user: data.response.user,
+      token: data.response.token,
+    };
+  } catch (error) {
+    console.error(error);
+
+    Swal.fire({
+      title: 'Error!',
+      icon: 'error',
+      text: error.response ? error.response.data.message : 'An error occurred'
+    })
+    return {
+      user: null,
+    };
+  }
+});
+
 
 export const user_signup = createAsyncThunk("user_signup", async (userData, { dispatch }) => {
   try {
