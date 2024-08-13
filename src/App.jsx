@@ -2,8 +2,10 @@ import { RouterProvider } from "react-router-dom";
 import router from './router/router';
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
+
 import axios from "axios";
 import { user_token } from "./store/actions/userActions";
+
 
 import './App.css';
 import 'tailwindcss/tailwind.css';
@@ -24,7 +26,6 @@ function App() {
         })
         .catch(err => {
           console.error('Error fetching token:', err);
-          // Aquí podrías manejar el error redirigiendo al login o mostrando una notificación
         });
     }
   }, [dispatch]);

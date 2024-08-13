@@ -7,6 +7,6 @@ export const get_itineraries = createAsyncThunk('get_itineraries', async () => {
     return { itineraries: response.data.itineraries };
   } catch (error) {
     console.error('Error fetching itineraries:', error);
-    return { itineraries: [] }; // Retorna una lista vacía en caso de error
+    return { itineraries: [] };
   }
 });

@@ -74,12 +74,10 @@ export const user_login_google = createAsyncThunk("user_login_google", async (ob
 
 export const user_signup = createAsyncThunk("user_signup", async (userData, { dispatch }) => {
   try {
-    dispatch(userSignupLoading());
-
+    dispatch(userSignupSuccess());
+    
     const { data } = await axios.post("https://mytinerary-back-morganaalemann.onrender.com/api/auth/signup", userData);
     console.log(data);
-
-    dispatch(userSignupSuccess());
 
     Swal.fire({
       title: 'Success!',
