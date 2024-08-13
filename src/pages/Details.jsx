@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Link from '../components/Link';
@@ -9,13 +9,15 @@ function Details() {
   const [city, setCity] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/api/cities/${id}`)
+    axios.get(`https://mytinerary-back-morganaalemann.onrender.com/api/cities/${id}`)
       .then(response => {
         setCity(response.data.city);
       })
-      .catch(error => console.error('Error fetching city data:', error));
+      .catch(error => {
+        console.error('Error fetching city data:', error);
+        // Puedes mostrar una notificación de error o redirigir al usuario
+      });
   }, [id]);
-
 
   return (
     <main>

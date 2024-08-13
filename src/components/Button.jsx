@@ -1,5 +1,14 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
+Button.propTypes = {
+    img: PropTypes.string,
+    text: PropTypes.string.isRequired,  // `isRequired` si el prop es obligatorio
+    to: PropTypes.string.isRequired,
+    onClick: PropTypes.func,
+    className: PropTypes.string,
+    type: PropTypes.string
+};
 
 const Button = ({ img, text, to, onClick, className, type }) => (
     <Link className={className} to={to}>
