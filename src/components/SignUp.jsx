@@ -6,8 +6,12 @@ import { get_cities } from '../store/actions/cityActions';
 import '../styles/SignUp.css';
 import Button from './Button';
 import SignIn from './SignIn';
+import { useNavigate } from 'react-router-dom';
 
 function SignUp() {
+
+  const navigate = useNavigate()
+
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
@@ -16,10 +20,8 @@ function SignUp() {
     photo: '',
     country: 'select',
   });
-  const [showSignIn, setShowSignIn] = useState(false);
 
-  const loading = useSelector((store) => store.userReducer.loading);
-  const error = useSelector((store) => store.userReducer.error);
+  const [showSignIn, setShowSignIn] = useState(false);
 
   const dispatch = useDispatch();
 
@@ -42,9 +44,10 @@ function SignUp() {
     u.preventDefault();
     try {
 
-      await dispatch(user_signup(formData));
+    dispatch(user_signup(formData));
      
       setShowSignIn(true);
+
     } catch (error) {
       setShowSignIn(false);
       console.log(error);
@@ -53,6 +56,12 @@ function SignUp() {
 
   const handleShowSignIn = () => {
     setShowSignIn(true);
+  };
+
+  const handleGooglesign = (boolean) => {
+  
+    setShowSignIn(boolean);
+    navigate('/')
   };
 
   return (
@@ -160,7 +169,7 @@ function SignUp() {
                 />
               </div>
             </div>
-            <GoogleSignIn />
+            <GoogleSignIn handleGooglesign={handleGooglesign}/>
           </form>
         </>
       )}

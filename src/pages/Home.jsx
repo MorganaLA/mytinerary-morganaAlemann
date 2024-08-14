@@ -20,7 +20,7 @@ function Home() {
             </div>
 
             <div className="lg:py-24 lg:px-14 mt-[-1.5rem] sm:mt-[-5.5rem] md:mt-[-2.6rem] lg:mt-6">
-              <p className="my-4 sm:mt-4 sm:mb-8 sm:text-xl lg:text-[1.5rem] text-base text-gray-700 italic">"Find your perfect trip, designed by insiders who know and love their cities!"</p>
+              <p className="my-4 sm:mt-4 sm:mb-8 sm:text-xl lg:text-[1.5rem] text-base text-gray-700 italic">&quot;Find your perfect trip, designed by insiders who know and love their cities!&quot; </p>
               <div className="mt-3">
                 <Button
                   text='View More'

@@ -19,7 +19,6 @@ function SignIn() {
   const dispatch = useDispatch();
 
   const loading = useSelector((store) => store.userReducer.loading);
-  const error = useSelector((store) => store.userReducer.error);
 
   const handleInputChange = (u) => {
     setFormData({
@@ -30,10 +29,10 @@ function SignIn() {
   
   const handleLogin = async (u) => {
     u.preventDefault();
-    console.log('Holis')
+
     try {
 
-      await dispatch(user_login({ data: formData }));
+      dispatch(user_login({ data: formData }));
       
       setIsLoggedIn(true);
 

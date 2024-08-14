@@ -1,5 +1,6 @@
-import React from 'react'
 import Link from '../components/Link';
+import PropTypes from 'prop-types';
+
 
 function CityCard({ name, country, image, description, id}) {
     return (
@@ -33,5 +34,13 @@ function CityCard({ name, country, image, description, id}) {
         </div>
     )
 }
+CityCard.propTypes = {
+    name: PropTypes.string.isRequired,
+    country: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+};
+
 
 export default CityCard
