@@ -9,7 +9,7 @@ function Details() {
   const [city, setCity] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/api/cities/${id}`)
+    axios.get(`https://mytinerary-back-morganaalemann.onrender.com/api/cities/${id}`)
       .then(response => {
         setCity(response.data.city);
       })
